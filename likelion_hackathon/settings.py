@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+<<<<<<< HEAD
+    'blog.apps.BlogConfig',
+=======
     'wordconter.apps.WordconterConfig',
 
 
@@ -47,6 +50,7 @@ INSTALLED_APPS = [
     
 
 
+>>>>>>> 121ba35aca5ade5ff5319e8f7ed1092cffc6fbe7
 ]
 
 MIDDLEWARE = [
