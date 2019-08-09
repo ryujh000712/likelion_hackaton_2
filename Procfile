@@ -1,1 +1,1 @@
-web: gunicorn likelion_hackaton_2.wsgi --log-file -
+web: gunicorn likelion_hackaton.wsgi --log-file -
