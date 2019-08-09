@@ -38,7 +38,14 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'wordconter.apps.WordconterConfig',
+
     'portfolio.apps.PortfolioConfig',
+
+    'main.apps.MainConfig',
+    'blog.apps.BlogConfig',
+    'portfolio.apps.PortfolioConfig',
+    
+
 
 ]
 
@@ -57,7 +64,7 @@ ROOT_URLCONF = 'likelion_hackathon.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['likelion_hackathon/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
