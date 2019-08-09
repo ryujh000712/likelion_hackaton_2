@@ -23,6 +23,7 @@ import blog.views
 import wordconter.views
 import main.views
 import portfolio.views
+import social_account.views
 
 from django.conf.urls.static import static
 from django.conf import settings
@@ -30,9 +31,10 @@ from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('main.urls')),
-    path('wordcounter/', include('wordconter.urls')),
     path('blog/', include('blog.urls')),
+    path('wordcounter/', include('wordconter.urls')),
+    path('', include('main.urls')),
     path('portfolio/', include('portfolio.urls')),
+    path('accounts/', include('social_account.urls')),
     
 ]

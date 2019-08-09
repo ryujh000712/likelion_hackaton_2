@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'main.apps.MainConfig',
     'blog.apps.BlogConfig',
     'portfolio.apps.PortfolioConfig',
+    'social_account.apps.SocialAccountConfig',
     
 
 
