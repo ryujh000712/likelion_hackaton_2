@@ -38,10 +38,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'wordconter.apps.WordconterConfig',
+
+
     'main.apps.MainConfig',
     'blog.apps.BlogConfig',
     'portfolio.apps.PortfolioConfig',
     
+
 
 ]
 
