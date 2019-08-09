@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'wordconter.apps.WordconterConfig',
+    'portfolio.apps.PortfolioConfig',
+
 ]
 
 MIDDLEWARE = [
