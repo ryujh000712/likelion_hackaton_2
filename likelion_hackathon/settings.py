@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'wordconter.apps.WordconterConfig',
 
-    'portfolio.apps.PortfolioConfig',
 
     'main.apps.MainConfig',
     'blog.apps.BlogConfig',
