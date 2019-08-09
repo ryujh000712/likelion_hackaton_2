@@ -1,5 +1,5 @@
-"""likelion_hackathon URL Configuration
 
+<<<<<<< HEAD
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.2/topics/http/urls/
 Examples:
@@ -23,5 +23,22 @@ urlpatterns = [
     path('blog/<int:blog_id>/', blog.views.detail, name='detail'),
     path('blog/new/', blog.views.new, name='new'),
     path('blog/create/', blog.views.create, name='create'),
+=======
+from django.urls import path, include
+import blog.views, wordconter.views, portfolio.views, main.views
+
+from django.conf.urls.static import static
+from django.conf import settings
+
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', include('main.urls')),
+    path('wordcounter/', include('wordconter.urls')),
+    path('blog/', include('blog.urls')),
+    path('portfolio/', include('portfolio.urls')),
+>>>>>>> 121ba35aca5ade5ff5319e8f7ed1092cffc6fbe7
     
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+
